@@ -1,4 +1,4 @@
-class Api::V1::LiquorsController < ApplicationController
+class LiquorsController < ApplicationController
   before_action :set_liquor, only: [:show, :update, :destroy]
 
   # GET /liquors
