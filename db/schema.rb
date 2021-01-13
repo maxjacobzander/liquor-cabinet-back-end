@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_13_164928) do
+ActiveRecord::Schema.define(version: 2021_01_13_170826) do
 
   create_table "liquors", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "variety"
     t.integer "year"
     t.string "origin"
     t.text "tasting_notes"
