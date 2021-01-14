@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::API
-    helpers do
         def current_user
             # mocked up logged in
             User.first
@@ -7,5 +6,4 @@ class ApplicationController < ActionController::API
         def logged_in?
             !!current_user
         end
-    end
 end
