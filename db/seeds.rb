@@ -7,7 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Liquor.create([{
-    name: "Whisky"
+    name: "Whisky",
+    alternate_names: "Whiskey, Bourbon, Scotch, Rye"
 },
 {
     name: "Tequila"
@@ -22,7 +23,8 @@ Liquor.create([{
     name: "Vodka"
 },
 {
-    name: "Wine"
+    name: "Wine",
+    alternate_names: "Red Wine, White Wine, Rosé"
 }
 ])
 
