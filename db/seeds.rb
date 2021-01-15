@@ -65,7 +65,7 @@ Drink.create([{
 {
     name: "Daiquiri",
     other_ingredients: "1.5 oz white rum, 1 oz lime juice, .5 oz simple syrup, Lime wedge",
-    instructions: "Add all liquid ingredients to a shaker with ice. Shake well and strain into a cocktail glass with ice. Garnish with a lime wedge."
+    instructions: "Add all liquid ingredients to a shaker with ice. Shake well and strain into a cocktail glass with ice. Garnish with a lime wedge.",
     liquor_id: 4
 },
 {
@@ -107,13 +107,13 @@ Drink.create([{
 {
     name: "Cosmopolitan",
     other_ingredients: "1 1/2 oz Vodka Citron, 1 oz Cranberry juice, 1/2 oz Cointreau, 1/2 oz Fresh lime juice",
-    instructions: "Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel or orange zest."
+    instructions: "Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel or orange zest.",
     liquor_id: 5
 },
 {
     name: "Negroni",
     other_ingredients: " 1¼ ounces gin, 1¼ ounces Campari, 1¼ ounces sweet vermouth",
-    instructions: "Stir all liquid ingredients with ice. Strain into chilled rocks glass filled with ice. Garnish with an orange twist."
+    instructions: "Stir all liquid ingredients with ice. Strain into chilled rocks glass filled with ice. Garnish with an orange twist.",
     liquor_id: 3
 },
 {
@@ -121,7 +121,7 @@ Drink.create([{
     other_ingredients: "1 1/2 oz White rum, 1 oz Fresh lime juice, 2 teaspoons Sugar, 6 leaves of Mint, Soda Water",
     instructions: "Mint sprigs muddled with sugar and lime juice. Rum added and topped with soda water. Garnished with sprig of mint leaves. Served with a straw.",
     liquor_id: 4
-}
+},
 {
     name: "Whiskey Sour",
     other_ingredients: "2 ounces bourbon (or other whiskey), ¾ ounce fresh lemon juice, ¾ ounce simple syrup",
@@ -143,7 +143,7 @@ Drink.create([{
 {
     name: "Sazerac",
     other_ingredients: "1 1/2 oz Rye whiskey or Cognac, 1/4 oz Absinthe, One sugar cube, Three dashes Peychaud's Bitters",
-    instructions: "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the Lemon peel for garnish."
+    instructions: "Rinse a chilled old-fashioned glass with the absinthe, add crushed ice and set it aside. Stir the remaining ingredients over ice and set it aside. Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass. Add the Lemon peel for garnish.",
     liquor_id: 1
 },
 {
