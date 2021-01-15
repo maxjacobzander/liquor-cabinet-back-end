@@ -6,11 +6,13 @@ class Api::V1::LiquorsController < ApplicationController
     @liquors = Liquor.all
 
     render json: @liquors
+    # render json: @liquors.as_json(include: {drinks: {only: [:name, :other_ingredients, :instruction, :rating, :liquor_id]}})
   end
 
   # GET /liquors/1
   def show
     render json: @liquor
+    # render json: @liquors.as_json(include: {drinks: {only: [:name, :other_ingredients, :instruction, :rating, :liquor_id]}})
   end
 
   # POST /liquors
@@ -46,6 +48,7 @@ class Api::V1::LiquorsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def liquor_params
-      params.require(:liquor).permit(:name)
+      # params.require(:liquor).permit(:name, :alternate_names)
+      params.require(:liquor).permit(:name, :alternate_names, drinks_attributes: [:name, :other_ingredients, :instruction, :rating, :liquor_id])
     end
 end
