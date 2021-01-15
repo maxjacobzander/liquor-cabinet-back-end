@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :users do
-        resources :liquors
+      resources :drinks
+      resources :liquors do
+        resources :drinks
       end
     end
   end

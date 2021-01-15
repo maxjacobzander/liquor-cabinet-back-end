@@ -1,4 +1,4 @@
 class Liquor < ApplicationRecord
-  belongs_to :user
-  validates :name, :variety, presence: true
+    validates :name, presence: true
+    has_many :drinks
 end

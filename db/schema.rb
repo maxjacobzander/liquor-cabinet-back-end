@@ -10,30 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_14_154702) do
+ActiveRecord::Schema.define(version: 2021_01_15_020147) do
+
+  create_table "drinks", force: :cascade do |t|
+    t.string "name"
+    t.text "other_ingredients"
+    t.text "instruction"
+    t.float "rating"
+    t.integer "liquor_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "liquors", force: :cascade do |t|
     t.string "name"
-    t.string "variety"
-    t.integer "year"
-    t.string "origin"
-    t.text "tasting_notes"
-    t.string "image"
-    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.float "rating"
-    t.index ["user_id"], name: "index_liquors_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "username"
-    t.string "password_digest"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.date "birthday"
-  end
-
-  add_foreign_key "liquors", "users"
 end
