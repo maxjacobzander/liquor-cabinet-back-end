@@ -25,6 +25,9 @@ Liquor.create([{
 {
     name: "Wine",
     alternate_names: "Red Wine, White Wine, Rosé"
+},
+{
+    name: "Other"
 }
 ])
 
