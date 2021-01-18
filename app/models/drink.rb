@@ -1,4 +1,3 @@
 class Drink < ApplicationRecord
-    validates :name, :other_ingredients, :instructions, presence: true
-    belongs_to :liquor
+    validates :name, :ingredients, :instructions, :main_liquor presence: true
 end
