@@ -4,12 +4,6 @@ class Api::V1::DrinksController < ApplicationController
   # GET /drinks
   def index
     @drinks = Drink.all
-    # if params[:liquor_id]
-    #   @liquor = Liquor.find(params[:liquor_id])
-    #   @drinks = @liquor.drinks
-    # else
-    #   @drinks = Drink.all
-    # end
 
     render json: @drinks
   end
