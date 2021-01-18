@@ -3,12 +3,13 @@ class Api::V1::DrinksController < ApplicationController
 
   # GET /drinks
   def index
-    if params[:liquor_id]
-      @liquor = Liquor.find(params[:liquor_id])
-      @drinks = @liquor.drinks
-    else
-      @drinks = Drink.all
-    end
+    @drinks = Drink.all
+    # if params[:liquor_id]
+    #   @liquor = Liquor.find(params[:liquor_id])
+    #   @drinks = @liquor.drinks
+    # else
+    #   @drinks = Drink.all
+    # end
 
     render json: @drinks
   end
@@ -51,6 +52,6 @@ class Api::V1::DrinksController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def drink_params
-      params.require(:drink).permit(:name, :other_ingredients, :instruction, :rating, :liquor_id)
+      params.require(:drink).permit(:name, :ingredients, :instruction, :rating, :main_liquor)
     end
 end
