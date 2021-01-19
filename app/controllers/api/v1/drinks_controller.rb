@@ -36,6 +36,7 @@ class Api::V1::DrinksController < ApplicationController
   # DELETE /drinks/1
   def destroy
     @drink.destroy
+    render json: @drink
   end
 
   private
