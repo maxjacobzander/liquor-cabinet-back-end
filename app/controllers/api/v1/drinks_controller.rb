@@ -39,6 +39,12 @@ class Api::V1::DrinksController < ApplicationController
     render json: @drink
   end
 
+  # SEARCH /search
+  def search
+    @drinks = Drink.find(params[:main_liquor])
+    binding.pry
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_drink
