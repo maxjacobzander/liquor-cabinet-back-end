@@ -41,8 +41,8 @@ class Api::V1::DrinksController < ApplicationController
 
   # SEARCH /search
   def search
-    @drinks = Drink.find(params[:main_liquor])
-    binding.pry
+    @drinks = Drink.where("main_liquor LIKE ?", "%" + params[:q] + "%")
+    render json: @drinks
   end
 
   private
