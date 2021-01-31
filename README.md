@@ -1,24 +1,29 @@
-# README
+# Liquor Cabinet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Back-End Code (Front-End Code available [here](https://github.com/maxjacobzander/liquor-cabinet-front-end))
+## What's Is Liquor Cabinet?
+Liquor Cabinet is a single-page web application with a React/Redux front-end and a Rails API backend. Users can search a type of liquor that they have in their posession and the app with return cocktail recipes that the user can make featuring that liquor.
 
-Things you may want to cover:
+### User Guide
+Upon opening up the page, the user must confirm that they are of legal drinking age (in the USA). If so, they are taken to the home page where they can input a type of liquor into the search bar and have drinks returned to them. By hovering over a drink's card, the drink's recipe with be revealed. The user also has the option to either view all of the drinks in the database or add a new drink if it isn't already listed. If viewing the full list, users can also search the database by ingredient. Also, if they so choose, a user can click on the "View This Drink" button to see a recipe larger.
 
-* Ruby version
+### Future Plans
+Anticipated future updates include:
+- The ability to edit drink entries
+- The ability to rate drinks
 
-* System dependencies
+### Installation Guide
+- Clone both front-end and back-end repositories
+- On the back-end:
+    - Run `bundle install`
+    - Run `rails db: migrate` to migrate the tables
+    - Run `rails db: seed` to seed the necessary data into the database
+    - Run `rails s` to start up the rails server
+- Follow directions in the front-end README to properly set it up and get it running
+- Search for a drink, and enjoy responsibly!
 
-* Configuration
+### Contributor's Guide
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Licencing Statement
+This code is licenced under the MIT Open Source Public License.
