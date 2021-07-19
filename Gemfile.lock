@@ -171,6 +171,7 @@ DEPENDENCIES
   byebug
   dotenv
   listen (~> 3.2)
+  mimemagic (~> 0.3.5)
   pg
   pry
   puma (~> 4.1)
